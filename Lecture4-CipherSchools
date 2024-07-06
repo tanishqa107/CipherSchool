@@ -1,0 +1,108 @@
+HTML Tags
+HTML stands for Hyper Text Markup Language and it is also the standard markup language for creating web pages
+HTML is not case sensitive
+it basically tells us the structure of the web page
+We start the HTML code by writing <!DOCTYPE html> and then open and close with <html> </html>
+we can enclose the title of the page in <head> </head>
+then to write the body we start and close by <body> </body>
+<h1> </h1> for heading
+<p> </p> for paragraph
+we can simply take the general code by typing ! and pressing enter in the vs code
+the <!DOCTYPE html> means the document is a html document
+the <html lang="en"> refers to html tag which is root of any html tag
+the <head> tag contains meta data about any web page
+<title> specifies the title of the entire web page stored in the menu bar of the web page
+there are 6 heading tags from h1 to h6 in which h1 being the largest anf most important one and h6 being the smallest and the least important one
+for adding links to the web page we use <a href="link"> </a> tag
+for adding image we use <img src="link to image"/> tag we can also use alt="image info" in this section
+it will be like <img src="link to image" alt="info image"/>
+for adding image present on our system we have to give the absolute path in the link section
+<button> title of button </button> will create the button 
+<blockquote> </blockquote> or <q> </q> is used for adding quotations to our web page (<q> </q> is a shorter quotation which gives us quotation is double quotes)
+for adding abbreviations we use the <abbr> tag
+<p><abbr title="World Health Organization">WHO</abbr>is good</p>
+<br> is used for breaking into new line
+<address> hi my name is ---- <br> visit me in --- <br> </address> is a address tag
+There are 2 list tags present in HTML generally Unordered List and Ordered List
+Unordered list lists the elements which does not require any order such as bullets 
+while ordered list lists the elemnts in some order such as 1 2 3
+for creating unordered list:
+<h4> unorderd list </h4>
+<ul>
+<li>first</li>
+<li>second<li>
+</ul>
+for creating ordered list, we just replace <ul> by <ol>
+<dl> </dl> is used for desciption list to provide description for some list
+<h2>description list:</h2>
+    <dl>
+        <dt>first</dt>
+        <dd>--this is first element</dd>
+        <dt>second</dt>
+        <dd>--this is second element</dd>        
+    </dl>
+<hr /> tag is used for inserting horizontal line
+<b> </b> is used for bold
+<i> </i> is used for italics
+<u> </u> is used for underline
+div element is often used as a container, it does not have any required own attributes, it is betetr to seperate your code into seperate divs
+span element is an inline container which is used to markup a part of a text or a document, it also does not have any own required attributes, it only have style, class and id
+<p>this is <span style="color: red">india</span></p>
+
+The code for the entire lecture is as follows
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is heading</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <p>this is paragraph</p>
+    <p>this is another paragraph</p>
+    <a href="https://google.com">go to google</a>
+    <img src="https://shotkit.com/wp-content/uploads/2023/02/dramatic-sky-when-where-sadiqur-rahman.jpeg "
+    alt="sky" />
+    <button>click me</button>
+    <blockquote>this is a quote</blockquote>
+    <q>this is also a quote</q>
+    <p><abbr title="World Health Organization">WHO</abbr>is good</p>
+    <address> hi my name is --- <br>
+    visit me in ---- <br> </address>
+    <h4>unordered list:</h4>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+    <h3>ordered list:</h3>
+    <ol>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ol>
+    <h2>description list:</h2>
+    <dl>
+        <dt>first</dt>
+        <dd>--this is first element</dd>
+        <dt>second</dt>
+        <dd>--this is second element</dd>        
+    </dl>
+    <div>
+    <p>this is me <br> i live in india</p>
+    <hr />
+    <p>this is<b>me</b></p>
+    <p>this is<i>me</i></p>
+    <p>this is<u>me</u></p>
+    </div>
+    <p>this is <span style="color: red">india</span></p>
+
+</body>
+</html>
