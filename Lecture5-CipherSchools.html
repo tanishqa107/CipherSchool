@@ -9,9 +9,11 @@ to sleect a particular paragraph to align give a particular id to that <p id="my
 for using a class selector we use a full stop character or a period character followed by the class name
 .center-paragraph {
     text-align: center;
-} rememeber to use the same class name as center-paragraph in the html file paragraph as <p class="center-paragraph>
+} rememeber to use the same class name as center-paragraph in the html file paragraph as
+<p class="center-paragraph>
 universal selector is the selectoe in which we want to select the entire document to style
-for universal selectors we use # { font-familt="font name"; }
+for universal selectors we use # 
+    { font-family="font name"; }
 grouping selectors are also simple selectors which selects the html elements witht the same style definitions
 for grouping the different selectors use comma h1, .center-paragraph, p { text align: center; color: brown;}
 combinator selector can select more than one simple selector they are of many types- descendant, child, adjacent sibling, general sibling
@@ -31,5 +33,58 @@ in this suppose we end the div tag somewhere like </div> and immediately on the 
 general sibling selector uses the negate symbol ~ it basically selects all the elementsthat are the next siblings of the specified element
 div ~ p {
     background-color: blue
+}
+now comes pseudoclass selector, a pseudo class is used to define a special state of the element, whenever we want to style a special state of the element we use this
+this works as in suppose we want to style something when mouse is over that certain element then we use this
+div ~ p: :hover {
+    background-color: green;
+}
+now coming to pseudo element selector, it is used to style specified parts of an element
+div ~ p::first-letter {
+    color: blueviolet;
+}
+now coming to the attribute selector, it is possible to style html elements that have specific attribute or attribute values
+a[target] {
+    background-color: aqua;
+} for every anchor tag which contains the target attribute, the background colour will be aqua
+
+
+
+p{ 
+    text-align: center ;
+}
+#mypara {
+    text-align: center;
+}
+.center-paragraph {
+    text-align: center;
+}
+# {
+    font-family: 'Times New Roman', Times, serif;
+}
+h1, .center-paragraph, p {
+    text-align: center;
+    color: aqua;
+}
+div p {
+    background-color: brown;
+}
+div > p {
+    background-color: aqua;
+}
+div + p {
+    background-color: red;
+}
+div ~ p {
+    background-color: blue
+}
+div ~ p: :hover {
+    background-color: green;
+}
+div ~ p::first-letter {
+    color: blueviolet;
+}
+a[target] {
+    background-color: aqua;
 }
 
