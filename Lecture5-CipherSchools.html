@@ -1,0 +1,35 @@
+CSS Selectors
+CSS provides an artistic way of enhancing web pages
+CSS selector basically selects a html element or a set of html element thhat we want to style
+we can divide the css selectors in five types- simple, combinator, pseudo-class, pseudo-element, attribute
+element selector is a kind of simple selector which selects the element with a certain tag name
+for linking our css file to the html file we can write <link rel="stylesheet" href="./file.css"/>
+p{ text align : center; } for aligning the text to the center
+to sleect a particular paragraph to align give a particular id to that <p id="mypara"> and then in css file style it as #mypara { text align: center; }
+for using a class selector we use a full stop character or a period character followed by the class name
+.center-paragraph {
+    text-align: center;
+} rememeber to use the same class name as center-paragraph in the html file paragraph as <p class="center-paragraph>
+universal selector is the selectoe in which we want to select the entire document to style
+for universal selectors we use # { font-familt="font name"; }
+grouping selectors are also simple selectors which selects the html elements witht the same style definitions
+for grouping the different selectors use comma h1, .center-paragraph, p { text align: center; color: brown;}
+combinator selector can select more than one simple selector they are of many types- descendant, child, adjacent sibling, general sibling
+descendant selector makes use of the idea of one particular element being the child of another element
+div p {
+    background-color: brown;
+} this changes the background colour of the entire paragraph
+the child selector selects all the elements under the children of the specifies element, it is very similar to the descendant selector
+every descendant is a child but not every child is a descendant
+div > p {
+    background-color: cyan;
+} in this case all the paragraphs under the div tag will be coloures cyan, but if we want it to be seperated we can use the section tag instead of the div tag
+for adjacent sibling selector we use the + sign, it is used to select the element which is directly next to the other specific eleement
+they must have the same parent element and adjacent mean immeditaely following
+div + p { background-collor: red; }
+in this suppose we end the div tag somewhere like </div> and immediately on the next line we write a p tag so the p tag will be coloured only as it right next to the div tag
+general sibling selector uses the negate symbol ~ it basically selects all the elementsthat are the next siblings of the specified element
+div ~ p {
+    background-color: blue
+}
+
